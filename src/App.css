@@ -1,0 +1,59 @@
+.App{
+  text-align: center;
+}
+.work {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+@media screen and (max-width: 550px){
+  .work{
+    flex-direction: column;
+  }
+  .done{
+    margin-top: 5px;
+  }
+} 
+.todo {
+  flex: 50%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.done {
+  flex: 50%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.add{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.titre{
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.desc{
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.listing {
+  display: flex;
+  flex-direction: row;
+}
+.listing p {
+  flex: 25%;
+}
+.listing input{
+  flex: 10%;
+  margin: 45px;
+}
+
