@@ -1,6 +1,7 @@
-import logo from './logo.svg';
 import React, { useState } from 'react';
 import './App.css';
+import { Todo } from './component/todo';
+import { Done } from './component/done';
 
 /*function App() {
  const [number,setNumber] = useState(0);
@@ -41,71 +42,20 @@ function App(){
   const [items,setItems] = useState([]);
   const [finished,setFinished] = useState([]);
 
-  const addItem = (event) => {
-    if(event.key == 'Enter'){
-    if(!newTitle){
-      alert("Enter a todo title");
-      return;
-    }
-
-    const item = {
-      title: newTitle
-    }; 
-    setItems(oldList => [...oldList,item]);
-    setNewTitle("");
-  }
-  }
-
-  const finishWork = (title) => {
-    const newFinished = items.filter(item => item.title == title);
-    const newArray = items.filter(item => item.title !== title);
-    setItems(newArray);
-    const finishedItem = {
-      title: newFinished[0].title
-    }
-    setFinished(oldList => [...oldList,finishedItem]);
-  }
-
-
   return(
     <div className="App">
       <div className="work">
-      <div className="todo">
-        <h1>Todo List App</h1>
-        <hr></hr>
-        <div className="inputing">
-        <input type={'text'} 
-          placeholder="Put a Title here..." 
-          value={newTitle}
-          onChange= {e => setNewTitle(e.target.value)}
-          onKeyDown={addItem}
-          className="titre"/>
-          <br/>
-        </div>
-        <ul>
-          {items.map(item => {
-            return(
-              <li key={item.title} className="listing">
-                <p> <h4> Title : </h4> {item.title}</p>
-                <input type={'checkbox'} onClick={() => {finishWork(item.title)}}/>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-      <div className="done">
-        <h1>Done</h1>
-        <hr></hr>
-        <ul>
-          {finished.map(e => {
-            return(
-              <li key={e.title} className="listing">
-                <p> <h4> Title : </h4> {e.title}</p>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
+      <Todo 
+      items={items}
+      setItems={setItems}
+      finished={finished}
+      setFinished={setFinished}
+      newTitle={newTitle}
+      setNewTitle={setNewTitle}
+      />
+      <Done
+      finished={finished}
+      />
       </div>
     </div>
   );
