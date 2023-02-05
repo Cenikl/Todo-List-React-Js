@@ -43,7 +43,7 @@ function App(){
   const [finished,setFinished] = useState([]);
 
   return(
-    <div className="App">
+    <div data-testid="app-1" className="App">
       <div className="work">
       <Todo 
       items={items}

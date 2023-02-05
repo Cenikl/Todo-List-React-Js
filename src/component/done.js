@@ -3,7 +3,7 @@ import React from "react";
 export const Done = (props) => {
 const{finished} = props;
 
-    return(<div className="done">
+    return(<div data-testid="done-1" className="done">
     <h1>Done</h1>
     <hr></hr>
     <ul>
