@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="App"
+  data-testid="app-1"
+>
+  <div
+    className="work"
+  >
+    <div
+      className="todo"
+      data-testid="todo-1"
+    >
+      <h1>
+        Todo List App
+      </h1>
+      <hr />
+      <div
+        className="inputing"
+      >
+        <input
+          className="titre"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Put a Title here..."
+          type="text"
+          value=""
+        />
+        <br />
+      </div>
+      <ul />
+    </div>
+    <div
+      className="done"
+      data-testid="done-1"
+    >
+      <h1>
+        Done
+      </h1>
+      <hr />
+      <ul />
+    </div>
+  </div>
+</div>
+`;

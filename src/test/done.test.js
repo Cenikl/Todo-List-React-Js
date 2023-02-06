@@ -9,9 +9,10 @@ afterEach(() =>{
 
 it("renders without crashing",()=>{
     const finished = [];
-    render(<Done finished={finished}></Done>)
+    render(<Done finished={finished}></Done>);
     const doneElement = screen.getByTestId("done-1");
     expect(doneElement).toBeInTheDocument();
+    expect(doneElement).toHaveTextContent("Done");
 })
 
 it("renders one element",()=>{

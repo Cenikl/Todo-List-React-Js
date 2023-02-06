@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`macthes snapshot 1 1`] = `
+<div
+  className="todo"
+  data-testid="todo-1"
+>
+  <h1>
+    Todo List App
+  </h1>
+  <hr />
+  <div
+    className="inputing"
+  >
+    <input
+      className="titre"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Put a Title here..."
+      type="text"
+    />
+    <br />
+  </div>
+  <ul />
+</div>
+`;
+
+exports[`macthes snapshot 2 1`] = `
+<div
+  className="todo"
+  data-testid="todo-1"
+>
+  <h1>
+    Todo List App
+  </h1>
+  <hr />
+  <div
+    className="inputing"
+  >
+    <input
+      className="titre"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Put a Title here..."
+      type="text"
+    />
+    <br />
+  </div>
+  <ul>
+    <li
+      className="listing"
+    >
+      <p>
+         
+        <h4>
+           Title : 
+        </h4>
+         
+        test
+      </p>
+      <input
+        onClick={[Function]}
+        type="checkbox"
+      />
+    </li>
+    <li
+      className="listing"
+    >
+      <p>
+         
+        <h4>
+           Title : 
+        </h4>
+         
+        testing
+      </p>
+      <input
+        onClick={[Function]}
+        type="checkbox"
+      />
+    </li>
+  </ul>
+</div>
+`;

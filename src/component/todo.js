@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export const Todo = (props) => {
   const {items,setItems,finished,setFinished,newTitle,setNewTitle} = props;
